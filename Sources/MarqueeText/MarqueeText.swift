@@ -89,7 +89,7 @@ public struct MarqueeText: View {
                 }
             }
         }
-        .frame(maxHeight: .infinity)
+        .frame(height: stringHeight - 5)
         .frame(maxWidth: isCompact ? stringWidth : nil)
         .onDisappear {
             self.animate = false
